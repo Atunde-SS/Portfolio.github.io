@@ -1,0 +1,1966 @@
+@charset "UTF-8";
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block;
+}
+
+audio, canvas, video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden] {
+  display: none;
+}
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:active, a:hover {
+  outline: 0;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b, strong {
+  font-weight: 700;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+q {
+  quotes: \201C \201D \2018 \2019;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -.5em;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+button, input {
+  line-height: normal;
+}
+
+button, html input[type=button], input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled], input[disabled] {
+  cursor: default;
+}
+
+input[type=checkbox], input[type=radio] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body, figure {
+  margin: 0;
+}
+
+legend, button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: '';
+  clear: both;
+  height: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+  /* added line */
+}
+
+/*!
+ *  Devicons 1.8.0 made by Theodore Vorillas / http://vorillaz.com 
+ */
+@font-face {
+  font-family: 'devicons';
+  src: url("../fonts/devicons.eot?xqxft6");
+  src: url("../fonts/devicons.eot?#iefixxqxft6") format("embedded-opentype"), url("../fonts/devicons.woff?xqxft6") format("woff"), url("../fonts/devicons.ttf?xqxft6") format("truetype"), url("../fonts/devicons.svg?xqxft6#devicons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.devicons {
+  font-family: 'devicons';
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.devicons-git:before {
+  content: "";
+}
+
+.devicons-git_compare:before {
+  content: "";
+}
+
+.devicons-git_branch:before {
+  content: "";
+}
+
+.devicons-git_commit:before {
+  content: "";
+}
+
+.devicons-git_pull_request:before {
+  content: "";
+}
+
+.devicons-git_merge:before {
+  content: "";
+}
+
+.devicons-bitbucket:before {
+  content: "";
+}
+
+.devicons-github_alt:before {
+  content: "";
+}
+
+.devicons-github_badge:before {
+  content: "";
+}
+
+.devicons-github:before {
+  content: "";
+}
+
+.devicons-github_full:before {
+  content: "";
+}
+
+.devicons-java:before {
+  content: "";
+}
+
+.devicons-ruby:before {
+  content: "";
+}
+
+.devicons-scala:before {
+  content: "";
+}
+
+.devicons-python:before {
+  content: "";
+}
+
+.devicons-go:before {
+  content: "";
+}
+
+.devicons-ruby_on_rails:before {
+  content: "";
+}
+
+.devicons-django:before {
+  content: "";
+}
+
+.devicons-markdown:before {
+  content: "";
+}
+
+.devicons-php:before {
+  content: "";
+}
+
+.devicons-mysql:before {
+  content: "";
+}
+
+.devicons-streamline:before {
+  content: "";
+}
+
+.devicons-database:before {
+  content: "";
+}
+
+.devicons-laravel:before {
+  content: "";
+}
+
+.devicons-javascript:before {
+  content: "";
+}
+
+.devicons-angular:before {
+  content: "";
+}
+
+.devicons-backbone:before {
+  content: "";
+}
+
+.devicons-coffeescript:before {
+  content: "";
+}
+
+.devicons-jquery:before {
+  content: "";
+}
+
+.devicons-modernizr:before {
+  content: "";
+}
+
+.devicons-jquery_ui:before {
+  content: "";
+}
+
+.devicons-ember:before {
+  content: "";
+}
+
+.devicons-dojo:before {
+  content: "";
+}
+
+.devicons-nodejs:before {
+  content: "";
+}
+
+.devicons-nodejs_small:before {
+  content: "";
+}
+
+.devicons-javascript_shield:before {
+  content: "";
+}
+
+.devicons-bootstrap:before {
+  content: "";
+}
+
+.devicons-sass:before {
+  content: "";
+}
+
+.devicons-css3_full:before {
+  content: "";
+}
+
+.devicons-css3:before {
+  content: "";
+}
+
+.devicons-html5:before {
+  content: "";
+}
+
+.devicons-html5_multimedia:before {
+  content: "";
+}
+
+.devicons-html5_device_access:before {
+  content: "";
+}
+
+.devicons-html5_3d_effects:before {
+  content: "";
+}
+
+.devicons-html5_connectivity:before {
+  content: "";
+}
+
+.devicons-ghost_small:before {
+  content: "";
+}
+
+.devicons-ghost:before {
+  content: "";
+}
+
+.devicons-magento:before {
+  content: "";
+}
+
+.devicons-joomla:before {
+  content: "";
+}
+
+.devicons-jekyll_small:before {
+  content: "";
+}
+
+.devicons-drupal:before {
+  content: "";
+}
+
+.devicons-wordpress:before {
+  content: "";
+}
+
+.devicons-grunt:before {
+  content: "";
+}
+
+.devicons-bower:before {
+  content: "";
+}
+
+.devicons-npm:before {
+  content: "";
+}
+
+.devicons-yahoo_small:before {
+  content: "";
+}
+
+.devicons-yahoo:before {
+  content: "";
+}
+
+.devicons-bing_small:before {
+  content: "";
+}
+
+.devicons-windows:before {
+  content: "";
+}
+
+.devicons-linux:before {
+  content: "";
+}
+
+.devicons-ubuntu:before {
+  content: "";
+}
+
+.devicons-android:before {
+  content: "";
+}
+
+.devicons-apple:before {
+  content: "";
+}
+
+.devicons-appstore:before {
+  content: "";
+}
+
+.devicons-phonegap:before {
+  content: "";
+}
+
+.devicons-blackberry:before {
+  content: "";
+}
+
+.devicons-stackoverflow:before {
+  content: "";
+}
+
+.devicons-techcrunch:before {
+  content: "";
+}
+
+.devicons-codrops:before {
+  content: "";
+}
+
+.devicons-css_tricks:before {
+  content: "";
+}
+
+.devicons-smashing_magazine:before {
+  content: "";
+}
+
+.devicons-netmagazine:before {
+  content: "";
+}
+
+.devicons-codepen:before {
+  content: "";
+}
+
+.devicons-cssdeck:before {
+  content: "";
+}
+
+.devicons-hackernews:before {
+  content: "";
+}
+
+.devicons-dropbox:before {
+  content: "";
+}
+
+.devicons-google_drive:before {
+  content: "";
+}
+
+.devicons-visualstudio:before {
+  content: "";
+}
+
+.devicons-unity_small:before {
+  content: "";
+}
+
+.devicons-raspberry_pi:before {
+  content: "";
+}
+
+.devicons-chrome:before {
+  content: "";
+}
+
+.devicons-ie:before {
+  content: "";
+}
+
+.devicons-firefox:before {
+  content: "";
+}
+
+.devicons-opera:before {
+  content: "";
+}
+
+.devicons-safari:before {
+  content: "";
+}
+
+.devicons-swift:before {
+  content: "";
+}
+
+.devicons-symfony:before {
+  content: "";
+}
+
+.devicons-symfony_badge:before {
+  content: "";
+}
+
+.devicons-less:before {
+  content: "";
+}
+
+.devicons-stylus:before {
+  content: "";
+}
+
+.devicons-trello:before {
+  content: "";
+}
+
+.devicons-atlassian:before {
+  content: "";
+}
+
+.devicons-jira:before {
+  content: "";
+}
+
+.devicons-envato:before {
+  content: "";
+}
+
+.devicons-snap_svg:before {
+  content: "";
+}
+
+.devicons-raphael:before {
+  content: "";
+}
+
+.devicons-google_analytics:before {
+  content: "";
+}
+
+.devicons-compass:before {
+  content: "";
+}
+
+.devicons-onedrive:before {
+  content: "";
+}
+
+.devicons-gulp:before {
+  content: "";
+}
+
+.devicons-atom:before {
+  content: "";
+}
+
+.devicons-cisco:before {
+  content: "";
+}
+
+.devicons-nancy:before {
+  content: "";
+}
+
+.devicons-clojure:before {
+  content: "";
+}
+
+.devicons-clojure_alt:before {
+  content: "";
+}
+
+.devicons-perl:before {
+  content: "";
+}
+
+.devicons-celluloid:before {
+  content: "";
+}
+
+.devicons-w3c:before {
+  content: "";
+}
+
+.devicons-redis:before {
+  content: "";
+}
+
+.devicons-postgresql:before {
+  content: "";
+}
+
+.devicons-webplatform:before {
+  content: "";
+}
+
+.devicons-jenkins:before {
+  content: "";
+}
+
+.devicons-requirejs:before {
+  content: "";
+}
+
+.devicons-opensource:before {
+  content: "";
+}
+
+.devicons-typo3:before {
+  content: "";
+}
+
+.devicons-uikit:before {
+  content: "";
+}
+
+.devicons-doctrine:before {
+  content: "";
+}
+
+.devicons-groovy:before {
+  content: "";
+}
+
+.devicons-nginx:before {
+  content: "";
+}
+
+.devicons-haskell:before {
+  content: "";
+}
+
+.devicons-zend:before {
+  content: "";
+}
+
+.devicons-gnu:before {
+  content: "";
+}
+
+.devicons-yeoman:before {
+  content: "";
+}
+
+.devicons-heroku:before {
+  content: "";
+}
+
+.devicons-debian:before {
+  content: "";
+}
+
+.devicons-travis:before {
+  content: "";
+}
+
+.devicons-dotnet:before {
+  content: "";
+}
+
+.devicons-codeigniter:before {
+  content: "";
+}
+
+.devicons-javascript_badge:before {
+  content: "";
+}
+
+.devicons-yii:before {
+  content: "";
+}
+
+.devicons-msql_server:before {
+  content: "";
+}
+
+.devicons-composer:before {
+  content: "";
+}
+
+.devicons-krakenjs_badge:before {
+  content: "";
+}
+
+.devicons-krakenjs:before {
+  content: "";
+}
+
+.devicons-mozilla:before {
+  content: "";
+}
+
+.devicons-firebase:before {
+  content: "";
+}
+
+.devicons-sizzlejs:before {
+  content: "";
+}
+
+.devicons-creativecommons:before {
+  content: "";
+}
+
+.devicons-creativecommons_badge:before {
+  content: "";
+}
+
+.devicons-mitlicence:before {
+  content: "";
+}
+
+.devicons-senchatouch:before {
+  content: "";
+}
+
+.devicons-bugsense:before {
+  content: "";
+}
+
+.devicons-extjs:before {
+  content: "";
+}
+
+.devicons-mootools_badge:before {
+  content: "";
+}
+
+.devicons-mootools:before {
+  content: "";
+}
+
+.devicons-ruby_rough:before {
+  content: "";
+}
+
+.devicons-komodo:before {
+  content: "";
+}
+
+.devicons-coda:before {
+  content: "";
+}
+
+.devicons-bintray:before {
+  content: "";
+}
+
+.devicons-terminal:before {
+  content: "";
+}
+
+.devicons-code:before {
+  content: "";
+}
+
+.devicons-responsive:before {
+  content: "";
+}
+
+.devicons-dart:before {
+  content: "";
+}
+
+.devicons-aptana:before {
+  content: "";
+}
+
+.devicons-mailchimp:before {
+  content: "";
+}
+
+.devicons-netbeans:before {
+  content: "";
+}
+
+.devicons-dreamweaver:before {
+  content: "";
+}
+
+.devicons-brackets:before {
+  content: "";
+}
+
+.devicons-eclipse:before {
+  content: "";
+}
+
+.devicons-cloud9:before {
+  content: "";
+}
+
+.devicons-scrum:before {
+  content: "";
+}
+
+.devicons-prolog:before {
+  content: "";
+}
+
+.devicons-terminal_badge:before {
+  content: "";
+}
+
+.devicons-code_badge:before {
+  content: "";
+}
+
+.devicons-mongodb:before {
+  content: "";
+}
+
+.devicons-meteor:before {
+  content: "";
+}
+
+.devicons-meteorfull:before {
+  content: "";
+}
+
+.devicons-fsharp:before {
+  content: "";
+}
+
+.devicons-rust:before {
+  content: "";
+}
+
+.devicons-ionic:before {
+  content: "";
+}
+
+.devicons-sublime:before {
+  content: "";
+}
+
+.devicons-appcelerator:before {
+  content: "";
+}
+
+.devicons-asterisk:before {
+  content: "";
+}
+
+.devicons-aws:before {
+  content: "";
+}
+
+.devicons-digital-ocean:before {
+  content: "";
+}
+
+.devicons-dlang:before {
+  content: "";
+}
+
+.devicons-docker:before {
+  content: "";
+}
+
+.devicons-erlang:before {
+  content: "";
+}
+
+.devicons-google-cloud-platform:before {
+  content: "";
+}
+
+.devicons-grails:before {
+  content: "";
+}
+
+.devicons-illustrator:before {
+  content: "";
+}
+
+.devicons-intellij:before {
+  content: "";
+}
+
+.devicons-materializecss:before {
+  content: "";
+}
+
+.devicons-openshift:before {
+  content: "";
+}
+
+.devicons-photoshop:before {
+  content: "";
+}
+
+.devicons-rackspace:before {
+  content: "";
+}
+
+.devicons-react:before {
+  content: "";
+}
+
+.devicons-redhat:before {
+  content: "";
+}
+
+.devicons-scriptcs:before {
+  content: "";
+}
+
+.devicons-sqllite:before {
+  content: "";
+}
+
+.devicons-vim:before {
+  content: "";
+}
+
+.top-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 10vh;
+}
+
+.top-nav li {
+  margin: 15px;
+}
+
+.top-nav li:hover {
+  border-bottom: 4px solid #FFA818;
+}
+
+.top-nav li:active {
+  border-bottom: 4px solid #F06000;
+}
+
+.top-nav li:focus {
+  outline: 1px dotted #FFA818;
+}
+
+.top-nav a {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.hamburger {
+  display: none;
+  text-align: right;
+  padding-right: 40px;
+  z-index: 1;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+}
+
+.hamburger a {
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.hamburger a:hover {
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+  color: #FFA818;
+}
+
+.hamburger li {
+  padding: 20px 0;
+}
+
+.hamburger .ham-input {
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: -10px;
+  right: 0px;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+  -webkit-touch-callout: none;
+}
+
+.hamburger .ham-input:checked ~ span {
+  opacity: 1;
+  -webkit-transform: rotate(45deg) translate(0px, 0px);
+          transform: rotate(45deg) translate(0px, 0px);
+  background: #F8F8F8;
+}
+
+.hamburger .ham-input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  -webkit-transform: rotate(0deg) scale(0.2, 0.2);
+          transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+.hamburger .ham-input:checked ~ span:nth-last-child(2) {
+  opacity: 1;
+  -webkit-transform: rotate(-45deg) translate(0px, -2px);
+          transform: rotate(-45deg) translate(0px, -2px);
+}
+
+.hamburger .ham-input:checked ~ ul {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+  opacity: 1;
+}
+
+.hamburger span {
+  display: block;
+  background: #F8F8F8;
+  height: 4px;
+  width: 45px;
+  margin-bottom: 10px;
+  position: relative;
+  right: -75%;
+  z-index: 1;
+  -webkit-transform-origin: 4px 0px;
+          transform-origin: 4px 0px;
+  -webkit-transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+.hamburger span:first-child {
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+}
+
+.hamburger span:last-child {
+  -webkit-transform-origin: 0% 100%;
+          transform-origin: 0% 100%;
+}
+
+.hamburger-menu {
+  position: absolute;
+  width: 750px;
+  margin: -100px 0 0 0;
+  padding: 50px;
+  padding-top: 125px;
+  right: -50px;
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.85)), to(rgba(0, 0, 0, 0.95)));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.95));
+  -webkit-font-smoothing: antialiased;
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+  -webkit-transform: translate(100%, 0);
+          transform: translate(100%, 0);
+  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+.welcome,
+.toggle-light {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.arrow,
+.switch-light,
+.light-check,
+.switch {
+  position: absolute;
+}
+
+.arrow,
+.toggle-light {
+  cursor: pointer;
+}
+
+.welcome {
+  min-height: 90vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.welcome .name {
+  -webkit-box-shadow: inset 0px -6px 0px 0px #FFA818;
+          box-shadow: inset 0px -6px 0px 0px #FFA818;
+}
+
+.arrow {
+  font-size: 5.5rem;
+  left: 50%;
+  right: 50%;
+}
+
+.arrow:active {
+  border-bottom: 4px solid #F06000;
+}
+
+.arrow:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #FFA818;
+}
+
+body.light {
+  background-color: #F8F8F8;
+  color: #030200;
+}
+
+body.light span,
+body.light .skills-title p,
+body.light a,
+body.light h1 {
+  color: #030200;
+}
+
+body.light .hamburger a {
+  color: #F8F8F8;
+}
+
+body.light .hamburger a:hover {
+  color: #FFA818;
+}
+
+body.light .hamburger span {
+  background: #030200;
+}
+
+body.light .welcome {
+  background-color: #F8F8F8;
+}
+
+body.light .fa-moon {
+  color: #FFA818;
+}
+
+.switch-light {
+  margin-top: 15px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  right: 0;
+  top: 80%;
+}
+
+.switch-light .toggle-light {
+  background-color: #030200;
+  border-radius: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  height: 23px;
+  width: 60px;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  left: 85%;
+  border: 1px solid white;
+}
+
+.switch-light .light-check {
+  opacity: 0;
+}
+
+.switch-light .switch {
+  background-color: #F8F8F8;
+  border-radius: 50%;
+  top: 3px;
+  left: -11px;
+  height: 15px;
+  width: 15px;
+  -webkit-transform: translateX(16px);
+          transform: translateX(16px);
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+}
+
+.switch-light input:checked + .toggle-light .switch {
+  -webkit-transform: translateX(48px);
+          transform: translateX(48px);
+}
+
+.switch-light .fa-sun,
+.switch-light .fa-moon {
+  font-size: 1.4rem;
+}
+
+.switch-light .fa-sun {
+  color: #F06000;
+}
+
+.switch-light .fa-moon {
+  color: #FFA818;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.about-name,
+.about-me-container,
+.about-pic,
+.about-text,
+.skills-container,
+.skills-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about-name,
+.about-text,
+.skills-title {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about-name,
+.about-pic,
+.skills-container,
+.skills-title {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.skills-container,
+.skills-title,
+.about-me-container,
+.about-pic,
+.about-text,
+.skills-container,
+.skills-title {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about-text p a:hover,
+.about-name h2 {
+  -webkit-box-shadow: inset 0px -5px 0px 0px #F06000;
+          box-shadow: inset 0px -5px 0px 0px #F06000;
+}
+
+.about-me {
+  min-height: 100vh;
+  padding-top: 20px;
+}
+
+.about-me-container {
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  margin: 45px 0;
+  width: 100%;
+}
+
+.about-me-container .about-pic {
+  margin-right: 30px;
+  width: 35%;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+}
+
+.about-text {
+  width: 60%;
+}
+
+.about-text p:nth-of-type(2), .about-text p:nth-of-type(3) {
+  margin: 25px 0;
+}
+
+.about-text p span {
+  font-weight: bold;
+}
+
+.skills {
+  height: 100%;
+}
+
+.skills h2 span {
+  -webkit-box-shadow: inset 0px -5px 0px 0px #FFA818;
+          box-shadow: inset 0px -5px 0px 0px #FFA818;
+}
+
+h3,
+.skills p {
+  font-weight: lighter;
+}
+
+.skills-container {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 6% auto;
+}
+
+.skills-title {
+  -ms-flex-preferred-size: 23%;
+      flex-basis: 23%;
+  margin: 10px;
+  padding: 10px;
+}
+
+.skills-title span {
+  font-size: 6.5rem;
+}
+
+.skills-title span:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #FFA818;
+}
+
+.skills-title p {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.projects,
+.current {
+  height: 100%;
+}
+
+.projects h2 span,
+.current h2 span {
+  -webkit-box-shadow: inset 0px -5px 0px 0px #FFA818;
+          box-shadow: inset 0px -5px 0px 0px #FFA818;
+}
+
+.projects h3,
+.projects h4,
+.projects .icon-text,
+.projects .project-links,
+.projects .project-icons-container,
+.current h3,
+.current h4,
+.current .icon-text,
+.current .project-links,
+.current .project-icons-container {
+  margin: 10px 0;
+}
+
+.projects h2 span,
+.current-title {
+  margin: 5% auto;
+}
+
+.project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.project .made-with span {
+  font-size: 4.5rem;
+  margin: 0 0.1em;
+}
+
+.project a {
+  text-transform: uppercase;
+}
+
+.project a:hover {
+  -webkit-text-decoration: underline 4px #FFA818;
+          text-decoration: underline 4px #FFA818;
+}
+
+.project p:first-of-type {
+  margin: 5px 0;
+}
+
+.mockup,
+.project-text {
+  width: calc(50% - 50px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mockup {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.project-text {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.project-text .project-icons-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.project-text:nth-child(2),
+.mockup:nth-child(2) {
+  margin-left: 50px;
+}
+
+.project-text:nth-child(1) {
+  text-align: right;
+}
+
+.project-text:nth-child(1) .project-icons-container {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.project-text:nth-child(1),
+.mockup:nth-child(1) {
+  margin-right: 50px;
+}
+
+.current h2 span {
+  -webkit-box-shadow: inset 0px -5px 0px 0px #F06000;
+          box-shadow: inset 0px -5px 0px 0px #F06000;
+}
+
+.current .current-title {
+  text-align: center;
+}
+
+.current .project a:hover {
+  -webkit-text-decoration: underline 4px #F06000;
+          text-decoration: underline 4px #F06000;
+}
+
+.form-container,
+form,
+.back-to-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form-container,
+form {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact {
+  height: 100%;
+}
+
+.contact h2 span,
+.contact .form-text a:hover {
+  -webkit-box-shadow: inset 0px -5px 0px 0px #F06000;
+          box-shadow: inset 0px -5px 0px 0px #F06000;
+}
+
+.contact .back-to-top {
+  margin-top: 20%;
+  cursor: pointer;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact .back-to-top:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+form {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: calc(50% - 50px);
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: 2px solid #F06000;
+}
+
+form input {
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+form textarea {
+  line-height: 1.3;
+  text-align: left;
+  resize: none;
+}
+
+form button {
+  padding: 8px 30px;
+  background-color: #F06000;
+  border-radius: 3px;
+  margin-top: 10px;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder,
+.form-container a {
+  text-transform: uppercase;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder,
+.form-container a {
+  text-transform: uppercase;
+}
+
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder,
+.form-container a {
+  text-transform: uppercase;
+}
+
+input::placeholder,
+textarea::placeholder,
+.form-container a {
+  text-transform: uppercase;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  font-size: 1.6rem;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  font-size: 1.6rem;
+}
+
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+  font-size: 1.6rem;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-size: 1.6rem;
+}
+
+.form-container {
+  margin: 50px 0;
+}
+
+.form-container .form-text {
+  width: 50%;
+  margin-left: 50px;
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+}
+
+.form-container .form-text br {
+  margin: 10px;
+}
+
+.form-container .form-text a {
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+footer {
+  height: 5vh;
+  text-align: center;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.wrapper {
+  max-width: 1180px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+button,
+form,
+a,
+input,
+textarea,
+label,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+ul,
+li,
+a {
+  text-decoration: none;
+  list-style: none;
+  color: #F8F8F8;
+}
+
+body {
+  font-size: 2rem;
+  font-family: "Sen", sans-serif;
+  background-color: #030200;
+  color: #F8F8F8;
+  line-height: 1.6;
+  letter-spacing: 1.5px;
+  overflow-x: hidden;
+  -webkit-transition: background 0.2s linear;
+  transition: background 0.2s linear;
+}
+
+h1,
+h2,
+h3,
+h4,
+.back-to-top,
+.skills p,
+button,
+label,
+footer p {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 4.5rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+h2,
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+label {
+  display: none;
+}
+
+footer p {
+  font-size: 1.5rem;
+}
+
+.socials {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.socials li {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+}
+
+.socials li span {
+  font-size: 4rem;
+}
+
+.socials li span:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #F06000;
+}
+
+.socials li span:focus {
+  outline: 1px dotted #FFA818;
+}
+
+.socials li,
+.back-to-top {
+  text-align: center;
+}
+
+.spacer {
+  height: 20vh;
+}
+
+@media (max-width: 780px) {
+  .about-text p,
+  .project p,
+  .form-text p,
+  .form-text a {
+    font-size: 1.6rem;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  .about-me-container .about-text,
+  form,
+  .form-text {
+    text-align: center;
+  }
+  .about-name,
+  h2,
+  .about-me-container .about-me {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .about-me-container .about-pic,
+  .project-text:nth-child(1),
+  .mockup:nth-child(1),
+  .project-text:nth-child(2),
+  .mockup:nth-child(2),
+  form,
+  .form-container .form-text {
+    margin: 0 auto;
+  }
+  .project-container .current-two,
+  .project-container .project-two,
+  .project-container .project-four,
+  .form-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .about-me-container .about-text,
+  .mockup,
+  .project-text {
+    width: 100%;
+  }
+  .spacer {
+    height: 15vh;
+  }
+  .top-nav {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    z-index: 1;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+     -ms-user-select: none;
+         user-select: none;
+  }
+  .about-me-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .about-me-container .about-pic {
+    width: 50%;
+  }
+  .about-me-container .about-text {
+    margin-top: 50px;
+  }
+  .about-me-container .contact-icons i {
+    font-size: 3.5rem;
+  }
+  .skills-title p {
+    font-size: 1.2rem;
+  }
+  .project {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .project .made-with span {
+    font-size: 4.1rem;
+  }
+  .project h4,
+  .project .project-links a {
+    font-size: 1.8rem;
+  }
+  .form-container form,
+  .form-container .form-text {
+    width: 95%;
+  }
+  .form-container .form-text {
+    margin-bottom: 50px;
+  }
+  .form-container .form-text br {
+    margin: 0;
+  }
+  .form-container .form-text a {
+    font-size: 1.5rem;
+  }
+  footer p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 3.3rem;
+  }
+  .arrow {
+    left: 45%;
+  }
+  .about-me-container .about-pic {
+    width: 90%;
+  }
+  .about-name,
+  h2,
+  .about-me-container .about-me {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .skills-title {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+    margin: 0;
+  }
+  .skills-title span {
+    font-size: 6rem;
+  }
+  .project-container {
+    margin-top: 50px;
+  }
+  .project-container .project-text,
+  .project-container .project-text:nth-child(1) {
+    text-align: center;
+  }
+  .project-container .project-text {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hamburger-menu {
+    display: none;
+  }
+  .ham-input:checked ~ .hamburger-menu {
+    display: block;
+  }
+  .form-container .form-text a {
+    font-size: 1.2rem;
+  }
+  .switch-light {
+    margin-top: 20px;
+    right: 10px;
+  }
+  .switch-light .toggle-light {
+    left: 73%;
+    width: 50px;
+  }
+  .switch-light .fa-sun,
+  .switch-light .fa-moon {
+    font-size: 1.1rem;
+  }
+  .switch-light .switch {
+    top: 5px;
+    left: -12px;
+    height: 12px;
+    width: 12px;
+    -webkit-transform: translateX(17px);
+            transform: translateX(17px);
+  }
+  .switch-light input:checked + .toggle-light .switch {
+    -webkit-transform: translateX(43px);
+            transform: translateX(43px);
+  }
+}
